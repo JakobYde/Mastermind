@@ -1,0 +1,4 @@
+﻿  Main.cpp
+C:\Users\kobbe\source\repos\Mastermind\Mastermind\Main.cpp(131,23): warning C4806: '==': unsafe operation: no value of type 'bool' promoted to type 'int' can equal the given constant
+  LINK : C:\Users\kobbe\source\repos\Mastermind\x64\Debug\Mastermind.exe not found or not built by the last incremental link; performing full link
+  Mastermind.vcxproj -> C:\Users\kobbe\source\repos\Mastermind\x64\Debug\Mastermind.exe

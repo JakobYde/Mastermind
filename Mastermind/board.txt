@@ -1,0 +1,14 @@
+          ---------------------
+Answer:   |   H   H   H   H   | 
+          ---------------------
+Guess 10: |   X   X   X   X   | 
+Guess 9:  |   X   X   X   X   | 
+Guess 8:  |   X   X   X   X   | 
+Guess 7:  |   X   X   X   X   | 
+Guess 6:  |   X   X   X   X   | 
+Guess 5:  |   X   X   X   X   | 
+Guess 4:  |   X   X   X   X   | 
+Guess 3:  |   X   X   X   X   | 
+Guess 2:  |   X   X   X   X   | 
+Guess 1:  |   X   X   X   X   | 
+          ---------------------

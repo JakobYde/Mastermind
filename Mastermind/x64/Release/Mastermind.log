@@ -1,0 +1,8 @@
+﻿  Main.cpp
+C:\Users\kobbe\source\repos\Mastermind\Mastermind\Main.cpp(131,23): warning C4806: '==': unsafe operation: no value of type 'bool' promoted to type 'int' can equal the given constant
+  Generating code
+  13 of 371 functions ( 3.5%) were compiled, the rest were copied from previous compilation.
+    4 functions were new in current compilation
+    12 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  Mastermind.vcxproj -> C:\Users\kobbe\source\repos\Mastermind\x64\Release\Mastermind.exe

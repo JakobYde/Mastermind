@@ -1,0 +1,12 @@
+﻿  Board.cpp
+C:\Users\kobbe\source\repos\Mastermind\Mastermind\Board.cpp(32,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\kobbe\source\repos\Mastermind\Mastermind\Board.cpp(44,22): warning C4018: '<': signed/unsigned mismatch
+C:\Users\kobbe\source\repos\Mastermind\Mastermind\Board.cpp(51,23): warning C4018: '<=': signed/unsigned mismatch
+C:\Users\kobbe\source\repos\Mastermind\Mastermind\Board.cpp(61,21): warning C4018: '<': signed/unsigned mismatch
+  Main.cpp
+C:\Users\kobbe\source\repos\Mastermind\Mastermind\Main.cpp(121,22): warning C4018: '<': signed/unsigned mismatch
+C:\Users\kobbe\source\repos\Mastermind\Mastermind\Main.cpp(126,22): warning C4018: '<': signed/unsigned mismatch
+C:\Users\kobbe\source\repos\Mastermind\Mastermind\Main.cpp(131,23): warning C4806: '==': unsafe operation: no value of type 'bool' promoted to type 'int' can equal the given constant
+  Generating Code...
+  LINK : C:\Users\kobbe\source\repos\Mastermind\Debug\Mastermind.exe not found or not built by the last incremental link; performing full link
+  Mastermind.vcxproj -> C:\Users\kobbe\source\repos\Mastermind\Debug\Mastermind.exe
