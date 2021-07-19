@@ -1,3 +1,0 @@
-﻿  Main.cpp
-C:\Users\kobbe\Documents\GitHub\Mastermind\Mastermind\Main.cpp(60,23): warning C4806: '==': unsafe operation: no value of type 'bool' promoted to type 'int' can equal the given constant
-  Mastermind.vcxproj -> C:\Users\kobbe\Documents\GitHub\Mastermind\x64\Debug\Mastermind.exe
