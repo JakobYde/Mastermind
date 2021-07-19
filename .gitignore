@@ -1,7 +1,7 @@
 *.obj
 *.tlog
 *.exe
-v16/*
+.vs/*
 x64/*
 x86/*
 *.user
