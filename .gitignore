@@ -2,6 +2,8 @@
 *.tlog
 *.exe
 .vs/*
+Mastermind/x64/*
+Mastermind/x86/*
 x64/Debug/*
 x86/Debug/*
 x64/Release/*
