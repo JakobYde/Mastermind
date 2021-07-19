@@ -5,6 +5,13 @@ bool inArray(std::string& val, std::vector<std::string>& arr)
 	return find(arr.begin(), arr.end(), val) != arr.end();
 }
 
+bool singleLetterInArray(char& val, std::vector<std::string>& arr)
+{
+	for (std::string color : arr)
+		if (val == color[0]) return true;
+	return false;
+}
+
 bool validInput(String& input, std::vector<std::string>& colors)
 {
 	input.toLower();
@@ -12,7 +19,7 @@ bool validInput(String& input, std::vector<std::string>& colors)
 	if (split.size() != 4) return false;
 
 	for (std::string s : split) {
-		if (!inArray(s, colors)) return false;
+		if (!inArray(s, colors) && !(s.size() == 1 && singleLetterInArray(s[0], colors))) return false;
 	}
 
 	return true;

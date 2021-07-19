@@ -8,7 +8,7 @@ class Board
 {
 public:
 	// Constructors
-	Board(int NAttempts, std::vector<std::string> colors);
+	Board(int nAttempts, std::vector<std::string> colors);
 
 	// Functions
 	void updateBoard(std::vector<std::string> guess);
@@ -32,5 +32,5 @@ private:
 	std::string boardGuess = "|   X   X   X   X   |";
 
 	// Functions
-	void createBoard(int NAttempts);
+	void createBoard(int nAttempts);
 };

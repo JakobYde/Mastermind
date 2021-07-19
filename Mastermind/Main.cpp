@@ -6,7 +6,7 @@
 
 int main()
 {
-	const int NAttempts = 10;
+	const int nAttempts = 10;
 	std::vector<std::string> colors = { "red", "green", "blue", "yellow", "purple", "orange", "cyan", "white"};
 
 	while(true) {
@@ -15,7 +15,7 @@ int main()
 		char mode;
 		while ((mode = tolower(_getch())) != 's' and mode != 'm');
 
-		Board board = Board(NAttempts, colors);
+		Board board = Board(nAttempts, colors);
 
 		// Get code
 		std::vector<std::string> code;
@@ -58,6 +58,7 @@ int main()
 		
 		// Wait for Enter
 		while (!_getch() == 13);
+		system("CLS");
 	}
 	return 0;
 }

@@ -1,4 +1,3 @@
-﻿  Utility.cpp
-  LINK : C:\Users\kobbe\Documents\GitHub\Mastermind\x64\Debug\Mastermind.exe not found or not built by the last incremental link; performing full link
-Utility.obj : error LNK2005: "bool __cdecl inArray(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > &,class std::vector<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::allocator<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > > &)" (?inArray@@YA_NAEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEAV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@2@@Z) already defined in Main.obj
-C:\Users\kobbe\Documents\GitHub\Mastermind\x64\Debug\Mastermind.exe : fatal error LNK1169: one or more multiply defined symbols found
+﻿  Main.cpp
+C:\Users\kobbe\Documents\GitHub\Mastermind\Mastermind\Main.cpp(60,23): warning C4806: '==': unsafe operation: no value of type 'bool' promoted to type 'int' can equal the given constant
+  Mastermind.vcxproj -> C:\Users\kobbe\Documents\GitHub\Mastermind\x64\Debug\Mastermind.exe

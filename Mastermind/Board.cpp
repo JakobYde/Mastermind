@@ -1,10 +1,10 @@
 #include "Board.h"
 
-Board::Board(int NAttempts, std::vector<std::string> cols)
+Board::Board(int nAttempts, std::vector<std::string> cols)
 {
-	createBoard(NAttempts);
+	createBoard(nAttempts);
 	colors = cols;
-	attemptsLeft = NAttempts;
+	attemptsLeft = nAttempts;
 }
 
 void Board::updateBoard(std::vector<std::string> guess)
@@ -20,7 +20,7 @@ void Board::updateBoard(std::vector<std::string> guess)
 		board[row][idx] = toupper(guess[i][0]);
 
 		// Check for correct colors in correct positions
-		if (guess[i] == tempCode[i]) {
+		if (guess[i][0] == tempCode[i][0]) {
 			keyPegs.append("R");
 			tempCode[i] = "Used";
 			continue;
@@ -28,7 +28,7 @@ void Board::updateBoard(std::vector<std::string> guess)
 
 		// Check for correct colors in wrong positions
 		for (int j = 0; j < tempCode.size(); j++) {
-			if (guess[i] == tempCode[j]) {
+			if (guess[i][0] == tempCode[j][0]) {
 				keyPegs.append("W");
 				tempCode[j] = "Used";
 				break;
@@ -92,7 +92,7 @@ std::vector<std::string> Board::getColors()
 	return colors;
 }
 
-void Board::createBoard(int NAttempts)
+void Board::createBoard(int nAttempts)
 {
 	/* Example of board layout
 	{{"          ---------------------"},
@@ -115,7 +115,7 @@ void Board::createBoard(int NAttempts)
 	board.push_back("          " + boardDivision);
 
 	// Insertion of guess rows
-	for (int i = NAttempts; i > 0; --i) {
+	for (int i = nAttempts; i > 0; --i) {
 		std::string prefix = "Guess " + std::to_string(i) + ":";
 		for (int i = prefix.size(); i < 10; ++i) prefix += " ";
 		board.push_back(prefix + boardGuess);

@@ -1,8 +1,15 @@
-﻿  Main.cpp
-C:\Users\kobbe\source\repos\Mastermind\Mastermind\Main.cpp(131,23): warning C4806: '==': unsafe operation: no value of type 'bool' promoted to type 'int' can equal the given constant
+﻿  Board.cpp
+C:\Users\kobbe\Documents\GitHub\Mastermind\Mastermind\Board.cpp(19,33): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\kobbe\Documents\GitHub\Mastermind\Mastermind\Board.cpp(69,34): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\kobbe\Documents\GitHub\Mastermind\Mastermind\Board.cpp(120,3): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  Main.cpp
+C:\Users\kobbe\Documents\GitHub\Mastermind\Mastermind\Main.cpp(60,23): warning C4806: '==': unsafe operation: no value of type 'bool' promoted to type 'int' can equal the given constant
+  String.cpp
+C:\Users\kobbe\Documents\GitHub\Mastermind\Mastermind\String.cpp(16,45): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  Utility.cpp
   Generating code
-  13 of 371 functions ( 3.5%) were compiled, the rest were copied from previous compilation.
-    4 functions were new in current compilation
-    12 functions had inline decision re-evaluated but remain unchanged
+  340 of 344 functions (98.8%) were compiled, the rest were copied from previous compilation.
+    58 functions were new in current compilation
+    1 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
-  Mastermind.vcxproj -> C:\Users\kobbe\source\repos\Mastermind\x64\Release\Mastermind.exe
+  Mastermind.vcxproj -> C:\Users\kobbe\Documents\GitHub\Mastermind\x64\Release\Mastermind.exe
