@@ -1,8 +1,7 @@
 #pragma once
 #include "Board.h"
-#include "String.h"
-#include "Utility.h"
 #include <conio.h>
+#include "Utility.h"
 
 int main()
 {
@@ -11,54 +10,47 @@ int main()
 
 	while(true) {
 		// Gamemode - one or two players
-		std::cout << "Please press 'S' for single player or 'M' for multiplayer";
+		std::cout << "Please press 'S' for single player or 'M' for multiplayer" << std::endl;
 		char mode;
-		while ((mode = tolower(_getch())) != 's' and mode != 'm');
-
-		Board board = Board(nAttempts, colors);
+		while ((mode = tolower(_getch())) != 's' and mode != 'm'); // Waiting for input
 
 		// Get code
 		std::vector<std::string> code;
-		if (mode == 's') code = generateCode(colors);
-		else code = getCodeFromUser(colors);
-
-		board.setCode(code);
-
-		//Loop runs until the code is broken or all attemps have been used
-		while (!board.isSolved() and board.getAttemptsLeft() > 0)
-		{
-			system("CLS");
-			board.print();
-
-			// Waiting for guess
-			std::string guessString;
-			String guess;
-
-			std::cout << "Please enter your guess (use space as separator): ";
-			getline(std::cin, guessString);
-			guess.setString(guessString);
-
-			while (!validInput(guess, colors)) {
-				std::cout << "Invalid input, please try again" << std::endl;
-				getline(std::cin, guessString);
-				guess.setString(guessString);
-			}
-			board.updateBoard(guess.split(" "));
+		if (mode == 's') 
+			code = generateCode(colors); // Random code
+		else {
+			std::cout << std::endl << "Player 1 please enter the code (use space as separator): ";
+			code = getCodeFromUser(colors); // User enters code
 		}
-		system("CLS");
-		board.print();
 
-		if (board.getAttemptsLeft() == 0)
+		Board board = Board(nAttempts, colors, code);
+		board.printBoard();
+
+		int state = UNSOLVED;
+		std::vector<std::string> guess;
+
+		// Loop until the code is guessed or all attemps have been used
+		while (state == UNSOLVED) {
+			std::cout << "Please enter your guess (use space as separator): ";
+			
+			guess = getCodeFromUser(colors);
+
+			state = board.updateBoard(guess);
+		}
+		
+		// Check and print the final state
+		if (state == FAILED)
 			std::cout << "You have run out of attempts, the code was: ";
-		else if (board.isSolved())
+		else if (state == SOLVED)
 			std::cout << "You have guesses the code, congratulations! The code was: ";
 
+		// Display code
 		for (std::string color : code) std::cout << color << " ";
 		std::cout << std::endl << "Press Enter to play again...";
 		
 		// Wait for Enter
-		while (!_getch() == 13);
-		system("CLS");
+		while (!(_getch() == 13));
+		system("CLS"); // Clear console
 	}
 	return 0;
 }
